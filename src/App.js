@@ -27,7 +27,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App'>
-				<h2>This is my Lottie Web animation</h2>
+				<h2>This is Mark's brain on muffins</h2>
 				{/* This is you wrapper where animation will load */}
 				<div
 					style={{ width: 400, margin: '0 auto' }}
