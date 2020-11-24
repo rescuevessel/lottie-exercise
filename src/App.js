@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import lottie from 'lottie-web'
+import animationData from './lottie/test-03.json'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let animObj = null
+
+class App extends React.Component {
+	componentDidMount() {
+		console.log('componentDidMount')
+
+		//call the loadAnimation to start the animation
+		animObj = lottie.loadAnimation({
+			container: this.animBox, // the dom element that will contain the animation
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			animationData: animationData, // the path to the animation json
+		})
+	}
+	handleStop = () => {
+		animObj.stop()
+	}
+	handlePlay() {
+		animObj.play()
+	}
+	render() {
+		return (
+			<div className='App'>
+				<h2>This is my Lottie Web animation</h2>
+				{/* This is you wrapper where animation will load */}
+				<div
+					style={{ width: 400, margin: '0 auto' }}
+					ref={ref => (this.animBox = ref)}></div>
+				<button onClick={this.handleStop}>Stop</button>
+				<button onClick={this.handlePlay}>Play</button>
+			</div>
+		)
+	}
 }
 
-export default App;
+export default App
