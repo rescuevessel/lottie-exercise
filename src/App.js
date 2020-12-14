@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import lottie from 'lottie-web'
-import animationData from './lottie/test-03.json'
+import animationData from './lottie/MP_Hero_05_Build_v7.json'
 import animationData2 from './lottie/MP_Hero_05_Build_v6.json'
 
 let animObj1 = null
@@ -42,7 +42,7 @@ class App extends React.Component {
 					<h2>Mixpanel - Hero 01</h2>
 					{/* This is you wrapper where animation will load */}
 					<div
-						style={{ width: 400, margin: '0 auto' }}
+						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.animBox1 = ref)}></div>
 					{/* <button onClick={this.handleStop}>Stop</button>
 					<button onClick={this.handlePlay}>Play</button> */}
