@@ -1,5 +1,18 @@
+@font-face {
+	font-family: PitchMedium;
+	src: url('./fonts/pitch-web-medium.woff') format('woff'),
+		url('./fonts/pitch-web-medium.eot') format('eot'),
+		url('./fonts/pitch-web-medium.woff2') format('woff2');
+}
+
 body {
+	font-family: PitchMedium;
+	font-size: 14px;
 	text-align: center;
 	background-color: #1f1f24;
 	color: white;
+}
+
+.anim {
+	padding: 40px 0 100px 0;
 }

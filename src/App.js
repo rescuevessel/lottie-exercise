@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import lottie from 'lottie-web'
-import animationData from './lottie/MP_Hero_05_Build_v7.json'
+import animationData from './lottie/MP_Hero_05_Build_v7c.json'
 import animationData2 from './lottie/MP_Hero_05_Build_v6.json'
 
 let animObj1 = null
@@ -38,22 +38,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className='App'>
-					<h2>Mixpanel - Hero 01</h2>
-					{/* This is you wrapper where animation will load */}
+				<div className='anim'>
+					<h2>Mixpanel / Hero 05 / Scalable Infrastructure</h2>
 					<div
 						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.animBox1 = ref)}></div>
-					{/* <button onClick={this.handleStop}>Stop</button>
-					<button onClick={this.handlePlay}>Play</button> */}
-				</div>
-
-				<div className='App'>
-					<h2>Mixpanel - Hero 05</h2>
-					{/* This is you wrapper where animation will load */}
-					<div
-						style={{ width: 600, margin: '0 auto' }}
-						ref={ref => (this.animBox2 = ref)}></div>
 					{/* <button onClick={this.handleStop}>Stop</button>
 					<button onClick={this.handlePlay}>Play</button> */}
 				</div>
