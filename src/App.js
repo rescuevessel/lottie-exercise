@@ -33,7 +33,7 @@ class App extends React.Component {
 		animObj1.stop()
 	}
 	handlePlay() {
-		animObj1.play()
+		animObj2.play()
 	}
 	render() {
 		return (
