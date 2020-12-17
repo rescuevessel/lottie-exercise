@@ -3,7 +3,7 @@ import './App.css'
 import lottie from 'lottie-web'
 import animationData from './lottie/MP_Hero_05_Build_v7c.json'
 import animationData2 from './lottie/MP_Hero_01_Build_v10.json'
-import animationData3 from './lottie/MP_Hero_01_Build_v10_half.json'
+import animationData3 from './lottie/MP_Hero_01_Build_v14.json'
 
 let animObj1 = null
 
@@ -55,17 +55,19 @@ class App extends React.Component {
 					<h2>Mixpanel / Hero 01 / Limitless Segmentation</h2>
 					<div
 						style={{ width: 600, margin: '0 auto' }}
+						ref={ref => (this.animBox3 = ref)}></div>
+				</div>
+				<div className='anim'>
+					<h2>Mixpanel / Hero 01 / Limitless Segmentation</h2>
+					<div
+						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.animBox2 = ref)}></div>
-					{/* <button onClick={this.handleStop}>Stop</button>
-					<button onClick={this.handlePlay}>Play</button> */}
 				</div>
 				<div className='anim'>
 					<h2>Mixpanel / Hero 05 / Scalable Infrastructure</h2>
 					<div
 						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.animBox1 = ref)}></div>
-					{/* <button onClick={this.handleStop}>Stop</button>
-					<button onClick={this.handlePlay}>Play</button> */}
 				</div>
 			</div>
 		)
