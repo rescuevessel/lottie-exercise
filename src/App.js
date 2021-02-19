@@ -7,7 +7,9 @@ import hero02 from './lottie/MP_Hero_02_Eye_v6.json'
 import hero03 from './lottie/MP_Hero_03_IR_v4.json'
 import hero04 from './lottie/MP_Hero_04_DM_v4.json'
 import hero05 from './lottie/MP_Hero_05_Build_v7c.json'
-import hero07 from './lottie/MP_Hero07_Build_v1.json'
+import hero06 from './lottie/MP_Hero_06_TD_v2.json'
+import hero07 from './lottie/MP_Hero_07_GA_v1.json'
+import hero08 from './lottie/MP_Hero_08_DI_v1.json'
 
 class App extends React.Component {
 	componentDidMount() {
@@ -50,11 +52,25 @@ class App extends React.Component {
 			animationData: hero05, // the path to the animation json
 		})
 		lottie.loadAnimation({
+			container: this.hero06obj, // the dom element that will contain the animation
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			animationData: hero06, // the path to the animation json
+		})
+		lottie.loadAnimation({
 			container: this.hero07obj, // the dom element that will contain the animation
 			renderer: 'svg',
 			loop: true,
 			autoplay: true,
 			animationData: hero07, // the path to the animation json
+		})
+		lottie.loadAnimation({
+			container: this.hero08obj, // the dom element that will contain the animation
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			animationData: hero08, // the path to the animation json
 		})
 	}
 
@@ -93,12 +109,24 @@ class App extends React.Component {
 						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.hero05obj = ref)}></div>
 				</div>
+				<div className='anim'>
+					<h2>Mixpanel / Hero 06 / Team Dashboards & Alerts</h2>
+					<div
+						style={{ width: 600, margin: '0 auto' }}
+						ref={ref => (this.hero06obj = ref)}></div>
+				</div>
 
 				<div className='anim'>
 					<h2>Mixpanel / Hero 07 / Group Analytics</h2>
 					<div
 						style={{ width: 600, margin: '0 auto' }}
 						ref={ref => (this.hero07obj = ref)}></div>
+				</div>
+				<div className='anim'>
+					<h2>Mixpanel / Hero 08 / Data Integration</h2>
+					<div
+						style={{ width: 600, margin: '0 auto' }}
+						ref={ref => (this.hero08obj = ref)}></div>
 				</div>
 			</div>
 		)
