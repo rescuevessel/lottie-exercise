@@ -3,7 +3,7 @@ import './App.css'
 import lottie from 'lottie-web'
 
 import hero01 from './lottie/MP_Hero_01_Build_v14.json'
-import hero02 from './lottie/MP_Hero_02_Eye_v6.json'
+import hero02 from './lottie/MP_Hero_02_Eye_v7.json'
 import hero03 from './lottie/MP_Hero_03_IR_v4.json'
 import hero04 from './lottie/MP_Hero_04_DM_v4.json'
 import hero05 from './lottie/MP_Hero_05_Build_v7c.json'
